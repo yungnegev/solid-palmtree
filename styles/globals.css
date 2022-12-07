@@ -95,7 +95,6 @@ width: 100%;
   border-radius: 50%;
   text-align: center;
   font-weight: 600;
-
 }
 .products-container{
   display: flex;
@@ -330,6 +329,7 @@ text-align: end;
 .empty-cart{
   margin:40px;
   text-align:center;
+  color: #DCDCDC;
 }
 .empty-cart h3{
   font-weight: 600;
@@ -352,8 +352,9 @@ padding: 20px 10px;
 .product .cart-product-image{
   width:180px ;
   height: 150px;
-    border-radius: 15px;
- background-color: #ebebeb;
+  border-radius: 15px;
+  background-color: #ebebeb;
+  object-fit: contain;
 }
 .item-desc .flex{
   display: flex;
@@ -529,7 +530,8 @@ padding: 30px 65px;
 }
 .quantity-desc{
   border: 1px solid gray;
-padding: 6px;
+  padding: 6px;
+  user-select: none;
 }
 .quantity-desc span{
   font-size: 16px;
