@@ -4,8 +4,7 @@ import { client } from '../lib/client'
 
 
 
-const Home = ({ products, bannerResponse, logo }) => {
-  console.log(logo)
+const Home = ({ products, bannerResponse }) => {
   let $productsFeed = products?.map((product) => {
     return <Product key={product._id} product={product} /> 
   })

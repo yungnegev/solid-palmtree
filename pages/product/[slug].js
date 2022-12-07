@@ -11,12 +11,18 @@ const ProductDetails = ({ product, products }) => {
     /* local state */
     const [indexM, setIndexM] = useState(0)
     /* global state (context) */
-    const { decQty, incQty, qty, onAdd } = useStateContext()
+    const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext()
+    /* buy now */
+    const handleBuyNow = () => {
+        onAdd(product, qty)
+        setShowCart(true)
+    }
 
 
     let $carousel = image?.map((item, index) =>{
         return (
             <img src={urlFor(item)}
+                 key={index}
                  className={index === indexM ? 'small-image selected-image' : 'small-image'}
                  onMouseEnter={() => setIndexM(index)}/>
         )
@@ -66,7 +72,7 @@ const ProductDetails = ({ product, products }) => {
                 
                 <div className='buttons'>
                     <button type='button' className='add-to-cart' onClick={ () => onAdd(product, qty) }>Add to Cart</button>
-                    <button type='button' className='buy-now' onClick={''}>Buy Now</button>
+                    <button type='button' className='buy-now' onClick={ handleBuyNow }>Buy Now</button>
                 </div>
             </div>
         </div>
