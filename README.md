@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Description 
 
-This is a fully fledged ecommerce application, using Next.js, sass, sanity and stripe for payment processing. The app is fully functional, with a comprehensive layout, shopping cart, payment section and a post payment page.
+This is a fully fledged ecommerce application, using Next.js, sass, sanity and stripe for payment processing. The app is fully functional, with a comprehensive layout, shopping cart, payment section and a post payment page. Hosted at: https://vercel.com/yungnegev/solid-palmtree
 
 ## Key lessons
 
